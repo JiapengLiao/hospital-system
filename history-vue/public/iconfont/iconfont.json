@@ -1,0 +1,37 @@
+{
+  "id": "3192669",
+  "name": "毕业设计",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "毕业设计-医院门诊系统",
+  "glyphs": [
+    {
+      "icon_id": "82755",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "629339",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "2811144",
+      "name": "地址管理",
+      "font_class": "dizhiguanli",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "26876039",
+      "name": "岗位级别",
+      "font_class": "gangweijibie",
+      "unicode": "ea45",
+      "unicode_decimal": 59973
+    }
+  ]
+}

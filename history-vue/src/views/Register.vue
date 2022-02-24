@@ -1,38 +1,26 @@
 <template>
     <div class="register">
-        <el-row class="row-bg" justify="space-around">
-            <el-col :span="6">
-                <el-form
-                class="form"
-                    :label-position="labelPosition"
-                    label-width="100px"
-                    :model="formLabelAlign"
-                >
-                    <h3>用户注册</h3>
-                    <el-form-item label="用户名">
-                        <el-input v-model="userInfo.username"></el-input>
-                    </el-form-item>
-                    <el-form-item label="密码">
-                        <el-input
-                            v-model="userInfo.password"
-                            type="password"
-                            show-password
-                        />
-                    </el-form-item>
-                    <el-form-item label="重复密码">
-                        <el-input
-                            v-model="userInfo.passwordAgain"
-                            type="password"
-                            show-password
-                        />
-                    </el-form-item>
-                    <el-form-item>
-                        <el-button type="primary" @click="register">注册</el-button>
-                        <el-button @click="reset">重置表单</el-button>
-                    </el-form-item>
-                </el-form>
-            </el-col>
-        </el-row>
+        <el-form-item label="用户名">
+            <el-input v-model="userInfo.username"></el-input>
+        </el-form-item>
+        <el-form-item label="密码">
+            <el-input
+                v-model="userInfo.password"
+                type="password"
+                show-password
+            />
+        </el-form-item>
+        <el-form-item label="重复密码">
+            <el-input
+                v-model="userInfo.passwordAgain"
+                type="password"
+                show-password
+            />
+        </el-form-item>
+        <el-form-item>
+            <el-button type="primary" @click="register">注册</el-button>
+            <el-button @click="reset">重置表单</el-button>
+        </el-form-item>
     </div>
 </template>
 
@@ -66,17 +54,12 @@ const reset = ()=>{
 </script>
 
 <style scoped>
-.register{
-    width: 100%;
-    height: 100%;
-    background-color: #E0E4E8;
-}
-.form{
-    background-color: white;
-    margin-top: 100px;
-    padding: 50px;
-}
-h3{
-    text-align: center;
-}
+    .form{
+        background-color: white;
+        margin-top: 100px;
+        padding: 50px;
+    }
+    h3{
+        text-align: center;
+    }
 </style>
