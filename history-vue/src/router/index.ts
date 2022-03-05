@@ -26,6 +26,11 @@ const routes = [
 				path: '/appointment',
 				name: 'Appointment',
 				component: () => import(/* 预约页面 */ '../views/Appointment.vue')
+			},
+			{
+				path: '/myAppointment',
+				name: 'MyAppointment',
+				component: () => import(/* 我的预约页面 */ '../views/MyAppointment.vue')
 			}
 		]
 	},
