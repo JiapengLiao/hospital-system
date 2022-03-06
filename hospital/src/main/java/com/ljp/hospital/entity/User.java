@@ -1,9 +1,20 @@
-package com.ljp.history.entity;
+package com.ljp.hospital.entity;
 
 public class User {
     private String username;
     private String password;
     private String phone;
+    private byte userType;
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", phone='" + phone + '\'' +
+                ", userType=" + userType +
+                '}';
+    }
 
     public String getPhone() {
         return phone;
@@ -28,14 +39,11 @@ public class User {
         this.userType = userType;
     }
 
-    private byte userType;
+    public User(String username) {
+        this.username = username;
+    }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+    public User() {
     }
 
     public String getUsername() {

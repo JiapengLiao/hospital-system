@@ -1,19 +1,26 @@
-package com.ljp.history.mapper;
+package com.ljp.hospital.mapper;
 
-import com.ljp.history.entity.User;
+import com.ljp.hospital.entity.User;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Mapper
 public interface UserMapper {
     /**
-     * 根据id查询用户信息
-     * @param id
+     * 判断是否存在用户
+     * @param username
+     * @return 存在的条数
+     */
+    int isExistUser(String username);
+
+    /**
+     * 根据username查询用户信息
+     * @param username
      * @return
      */
-    User getUserInfo(int id);
+    User getUserInfo(String username);
+
     /**
      * 新增用户
      * @param user
